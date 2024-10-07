@@ -28,8 +28,7 @@ public class ResumeGenerator {
 		doc.open();
 
 
-		Image img = Image.getInstance("C:\\Users\\sezer\\Desktop\\5230505055-Pdf-Ozgecmis-Odevi\\Pdf Özgeçmiş Ödevi 5230505055 Sezer Özlem\\Picture\\a.png"); // Resminizin dosya yolunu burada belirtin
-		img.scaleToFit(100, 100);
+		Image img = Image.getInstance("C:\\Users\\sezer\\Desktop\\5230505055-Pdf-Ozgecmis-Odevi\\Pdf Özgeçmiş Ödevi 5230505055 Sezer Özlem\\Picture\\a.png");
 		img.setAbsolutePosition(450, 710);
 		doc.add(img);
 
