@@ -28,26 +28,26 @@ public class ResumeGenerator {
 		doc.open();
 
 
-		Image img = Image.getInstance("C:\\Users\\sezer\\Desktop\\Pdf Özgeçmiş Ödevi 5230505055 Sezer Özlem\\Picture\\a.png"); // Resminizin dosya yolunu burada belirtin
-		img.scaleToFit(100, 100); // Resmin boyutunu ayarlayın (genişlik, yükseklik)
-		img.setAbsolutePosition(450, 710); // Sağ üst köşe için konum belirleme (x, y koordinatları)
+		Image img = Image.getInstance("C:\\Users\\sezer\\Desktop\\5230505055-Pdf-Ozgecmis-Odevi\\Pdf Özgeçmiş Ödevi 5230505055 Sezer Özlem\\Picture\\a.png"); // Resminizin dosya yolunu burada belirtin
+		img.scaleToFit(100, 100);
+		img.setAbsolutePosition(450, 710);
 		doc.add(img);
 
-		// Başlık
+
 		Paragraph title = new Paragraph("Ozgecmis", new com.itextpdf.text.Font(com.itextpdf.text.Font.FontFamily.HELVETICA, 24, com.itextpdf.text.Font.BOLD));
 		title.setAlignment(Element.ALIGN_CENTER);
 		doc.add(title);
 
 		doc.add(new Paragraph("\n")); // Boşluk
 
-		// Kişisel Bilgiler
+
 		doc.add(new Paragraph("Ad: SEZER OZLEM"));
 		doc.add(new Paragraph("E-posta: 5230505055@ogr.klu.edu.tr"));
 		doc.add(new Paragraph("Telefon: +1234567890"));
 
 		doc.add(new Paragraph("\n")); // Boşluk
 
-		// İş Deneyimleri Tablosu
+
 		PdfPTable table = new PdfPTable(3);
 		tableHeader(table);
 		addExperienceRow(table, "Sirket A", "Pozisyon A", "1 Ocak 2020 - 23 Ocak 2021");
